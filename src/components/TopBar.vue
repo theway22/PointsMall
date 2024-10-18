@@ -36,7 +36,7 @@ export default {
     line-height: 40px;
     }
     .top-bar-wrap{
-        background-color: skyblue;
+        /* background-color: skyblue; */
         /* height: 40px; */
         display: flex;
         justify-content: space-between;
@@ -51,6 +51,7 @@ export default {
         display: flex;
         align-items: center;
         margin-left: 20px;
+        cursor: pointer;
         }
     .r ul li .avatar{
         border-radius: 50%;
