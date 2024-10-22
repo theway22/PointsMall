@@ -12,7 +12,7 @@
         </div>
         <div class="search">
             <input type="text">
-            <span><img src="../assets/img/search.png" alt=""></span>
+            <span><img width="15" height="15" src="../assets/img/search.png" alt=""></span>
         </div>
     </div>
 </template>
@@ -45,6 +45,26 @@ export default {
     .header ul li:first-child{
         color: #0A328E;
         font-weight: 800;
+    }
+    .header .search input{
+        width: 214px;
+        height: 38px;
+        border-radius: 20px 0px 0px 20px;
+        border: 1px solid #DEDEDE;
+        text-indent: 10px;
+    }
+    .header .search{
+        display: flex;
+    }
+    .header .search span{
+        width: 50px;
+        height: 40px;
+        background: #0A328E;
+        border-radius: 0px 20px 20px 0px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
     }
     
 </style>
