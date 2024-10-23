@@ -3,11 +3,11 @@
         <h1><img src="../assets/img/indexLogo.png" alt=""></h1>
         <div class="nav">
             <ul>
-                <li>首页</li>
-                <li>全部商品</li>
-                <li>个人中心</li>
-                <li>我的订单</li>
-                <li>专属福利</li>
+                <li @click="$router.push('/home')" :class="$route.path==='/home'?'active':''">首页</li>
+                <li @click="$router.push('/goods')" :class="$route.path==='/goods'?'active':''">全部商品</li>
+                <li @click="$router.push('/user')" :class="$route.path==='/user'?'active':''">个人中心</li>
+                <li @click="$router.push('/order')" :class="$route.path==='/order'?'active':''">我的订单</li>
+                <li @click="$router.push('/free')" :class="$route.path==='/free'?'active':''">专属福利</li>
             </ul>
         </div>
         <div class="search">
@@ -26,7 +26,7 @@ export default {
 <style scoped>
     .header{
         height: 118px;
-        background-color: skyblue;
+        /* background-color: skyblue; */
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -42,9 +42,9 @@ export default {
         font-weight: 500;
         font-size: 16px;
     }
-    .header ul li:first-child{
-        color: #0A328E;
-        font-weight: 800;
+    .header .nav ul .active{
+        color: #0A328E ;
+        font-weight: 700;
     }
     .header .search input{
         width: 214px;

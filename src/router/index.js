@@ -7,9 +7,29 @@ Vue.use(VueRouter)
 const routes = [
   {
     path: '/',
+    redirect: '/home'
+  },
+  {
+    path: '/home',
     name: 'home',
     component: HomeView
   },
+  {
+    path: '/goods',    
+    component: () => import(/* webpackChunkName: "about" */ '../views/Goods.vue')
+  },
+  {
+    path: '/order',    
+    component: () => import(/* webpackChunkName: "about" */ '../views/Order.vue')
+  },
+  {
+    path: '/user',    
+    component: () => import(/* webpackChunkName: "about" */ '../views/User.vue')
+  },
+  {
+    path: '/free',    
+    component: () => import(/* webpackChunkName: "about" */ '../views/Free.vue')
+  }
   // {
   //   path: '/about',
   //   name: 'about',

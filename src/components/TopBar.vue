@@ -1,7 +1,7 @@
 <template>
     <div class="top-bar">
         <div class="wrap top-bar-wrap">
-        <div class="l">欢迎来到积分商城</div>
+        <div class="l">欢迎来到小东积分商城</div>
         <div class="r">
             <ul>                     
                 <li>
